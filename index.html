@@ -14,8 +14,8 @@
 
 
 <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-<link href="css/sliderman.css">
-<link href="css/base.css" rel="stylesheet">
+
+<link id="basecss" href="css/base.css" rel="stylesheet">
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -38,11 +38,19 @@
   <script src="assets/js/bootstrap-collapse.js"></script>
   <script src="assets/js/bootstrap-carousel.js"></script>
   <script src="assets/js/bootstrap-typeahead.js"></script>
-  <script src="assets/sliderman.1.3.7.js"></script>
+  <script src="assets/js/detect.js"></script>
 
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   <div class="container">
       <div id="header">
           <div class="row">
@@ -55,41 +63,37 @@
                 <div class="span10 offset2" id="nav_span">
                     <div class="nav" id="nav_menu">
                         <ul class="nav nav-pills" id="top_nav">
-                            <li class="active"><a id="button_navs_active" href="#"><i class="icon-home icon-white"></i>Home</a></li>
-                            <li><a id="button_navs" href="#">About Us</a></li>
-                            <li><a id="button_navs" href="#">For Sale</a></li>
-                            <li><a id="button_navs" href="#">Gallery of Homes</a></li>
-                            <li><a id="button_navs" href="#">Contact Us</a></li>
+                            <li class="active"><a id="button_navs_active" href="#"><i class="icon-home icon-white"></i>&nbsp;Home</a></li>
+                            <li><a id="button_navs" href="about.html">About Us</a></li>
+                            <li><a id="button_navs" href="for_sale.html">For Sale</a></li>
+                            <li><a id="button_navs" href="gallery.html">Gallery of Homes</a></li>
+                            <li><a id="button_navs" href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
                 </div> 
             </div>
         </div>
-      </div>
+      </div><br /><br /><br />
 	  <div class="slide_container">
-          <div class="row">
+      	<div class="row">
            <div class="span8 offset3">
-        	<div id="SliderName_3" class="SliderName_3">
-                <img class="slide_pic" src="img/slide1.jpg" width="795" height="395" alt="" title="" />
-                <img class="slide_pic" src="img/slide2.jpg" width="795" height="395" alt="" title="" />
-                <img class="slide_pic" src="img/slide3.jpg" width="795" height="395" alt="" title="" />
+        	<div id="slider3" class="carousel">
+            	<div class="carousel-inner">
+                <div class="active item"><img class="slide_pic" src="img/slide1.jpg" alt="" title="" /></div>
+                <div class="item"><img class="slide_pic" src="img/slide2.jpg" alt="" title="" /></div>
+                <div class="item"><img class="slide_pic" src="img/slide3.jpg" alt="" title="" /></div>
 			</div>
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+ 			<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+         </div>
         </div>
-        <script type="text/javascript">
-		
-		  demo3Effect1 = {name: 'myEffect31', top: true, move: true, duration: 400};
-		  demo3Effect2 = {name: 'myEffect32', right: true, move: true, duration: 400};
-		  demo3Effect3 = {name: 'myEffect33', bottom: true, move: true, duration: 400};
-		  demo3Effect4 = {name: 'myEffect34', left: true, move: true, duration: 400};
-		  demo3Effect5 = {name: 'myEffect35', rows: 3, cols: 9, delay: 50, duration: 100, order: 'random', fade: true};
-		  demo3Effect6 = {name: 'myEffect36', rows: 2, cols: 4, delay: 100, duration: 400, order: 'random', fade: true, chess: true};
-		
-		  effectsDemo3 = [demo3Effect1,demo3Effect2,demo3Effect3,demo3Effect4,demo3Effect5,demo3Effect6,'blinds'];
-		
-		  var demoSlider_3 = Sliderman.slider({container: 'SliderName_3', width: 800, height: 400, effects: effectsDemo3, display: {autoplay: 3000}});
-		</script>
-          </div>
+       </div>
       </div>
+      <script>
+	  $('.carousel').carousel({
+  		interval: 4500
+		})
+	</script>
 	 <div class="main_content">            
           <div class="row">
                 <div class="span4 offset2" id="content_small_col">
@@ -130,6 +134,9 @@
                     <h2 class="contact_header">
                         Contact Us
                     </h2>
+                    
+                    <a id="fb" href="https://www.facebook.com/viranicustom" alt="find us on facebook"><img id="fb_button" src="img/facebook_button.png" alt="find us on facebook" /></a>&nbsp;<div class="fb-like" data-href="https://www.facebook.com/viranicustom" data-send="true" data-layout="button_count" data-width="100" data-show-faces="true"></div>
+                    <br />
                     <p class="contact_content">
                         526 Tomotley Ct.<br />
                         Greer, SC 29651<br />
@@ -143,12 +150,14 @@
           	<div class="span12" id="spacer15">
             </div>
           </div>
+        <footer class="footer">
           <div class="row">
-              <div id="footer">
-                <p id="copyright"> Copyright 2012<br />
-                Virani Custom Homes</p><br />
-              </div>
-      	</div>
+            <div id="footer">
+              <p id="copyright"> Copyright 2012<br />
+              Virani Custom Homes</p><br />
+            </div>
+          </div>
+        </footer>
 	 </div>
   </div>
 </body>
