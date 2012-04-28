@@ -16,8 +16,12 @@
 .slide_container {
 	padding-top:150px;
 }
+.about_content {
+	padding-top:53%;	
+	min-height:300px;
+}
 body {
-	background-image:url(../img/1165298_58502245.jpg);
+	background-image:url(../img/back2.jpg);
 	background-position:center;
 	background-size:cover;
 
@@ -56,8 +60,8 @@ body {
 }
 
 #footer {
-	background-color:#0D163F;
-	color:#999999;
+	
+	color:#0D163F;
 	padding-top:8px;
 
 	
@@ -159,4 +163,9 @@ a#fb {
 .fb-like {
 	padding-left:10px;
 	padding-top:10px;
+}
+#content_large_col {
+	background-color:#FFFFFF;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
 }
