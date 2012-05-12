@@ -6,96 +6,135 @@
 
 
 <meta charset="utf-8">
-<title>About US</title>
+<title>About Us - Virani Custom Homes</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="bootstrap/css/bootstrap.css" rel="stylesheet" >
-
-
 <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-<link href="css/about.css" rel="stylesheet">
-<link id="basecss" href="css/base.css" rel="stylesheet">
-
-
+<link rel="stylesheet" media="screen" href="css/phone.css">
+<link rel="stylesheet" media="screen and (min-width: 330px) and (max-width: 590px)" href="css/phone-hz.css"> 
+<link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 800px)" href="css/tablet.css">
+<link rel="stylesheet" media="screen and (min-width: 801px) and (max-width: 1280px)" href="css/desktop.css">
+<link rel="stylesheet" media="screen and (min-width: 1280px)" href="css/widescreen.css">
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<link rel="shortcut icon" href="../assets/ico/favicon.ico">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+
 <!--javascript includes -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script src="assets/js/jquery.js"></script>
   <script src="assets/js/bootstrap-transition.js"></script>
-  <script src="assets/js/bootstrap-alert.js"></script>
-  <script src="assets/js/bootstrap-modal.js"></script>
-  <script src="assets/js/bootstrap-dropdown.js"></script>
-  <script src="assets/js/bootstrap-scrollspy.js"></script>
-  <script src="assets/js/bootstrap-tab.js"></script>
-  <script src="assets/js/bootstrap-tooltip.js"></script>
-  <script src="assets/js/bootstrap-popover.js"></script>
   <script src="assets/js/bootstrap-button.js"></script>
-  <script src="assets/js/bootstrap-collapse.js"></script>
-  <script src="assets/js/bootstrap-carousel.js"></script>
-  <script src="assets/js/bootstrap-typeahead.js"></script>
-  <script src="assets/js/detect.js"></script>
+
+<!-- insert google analytics code here-->
 
 </head>
 
 <body>
-  <div class="container">
+    <div class="container">
       <div id="header">
           <div class="row">
-              <div class="span10 offset2" id="header_logo">
-                  <a href="#" ><img class="header_logo" src="img/Virani Logo3a.jpg" alt="Virani Custom Homes" /></a>
+              <div class="span5 offset1" id="header_logo">
+                  <a href="#" ><img class="header_logo" src="img/logo.png" alt="Virani Custom Homes" /></a>
+              </div>              
+              <div class="span2 offset3 visible-tablet" id="phone_top">
+              		<p class="phone_num visible-tablet">
+                    	<b>864.346.0598</b>
+                    </p>
+                    <p class="phone_num visible-tablet">
+                    	<b>864.787.5296</b>
+                    </p>
+              </div>
+              <div class="span2 offset5 visible-desktop" id="phone_top">
+              		<p class="phone_num visible-desktop">
+                    	<b>864.346.0598</b>
+                    </p>
+                    <p class="phone_num visible-desktop">
+                    	<b>864.787.5296</b>
+                    </p>
               </div>
           </div>
             <div class="nav_container">      
               <div class="row" id="nav_row">
-                <div class="span10 offset2" id="nav_span">
-                    <div class="nav" id="nav_menu">
-                        <ul class="nav nav-pills" id="top_nav">
+                <div class="span10 offset1" id="nav_span">
+                    <div class="nav visible-phone" id="nav_menu">
+                        <ul class="nav nav-pills nav-stacked" id="top_nav">
                             <li><a id="button_navs" href="index.html"><i class="icon-home icon-white"></i>&nbsp;Home</a></li>
-                            <li class="active"><a id="button_navs_active" href="#">About Us</a></li>
+                            <li class="active"><a id="button_navs_active" href="about.html">About Us</a></li>
                             <li><a id="button_navs" href="for_sale.html">For Sale</a></li>
                             <li><a id="button_navs" href="gallery.html">Gallery of Homes</a></li>
-                            <li><a id="button_navs" href="contact.html">Contact Us</a></li>
+                            <li><a id="button_navs" href="contact.php">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav visible-tablet" id="nav_menu">
+                        <ul class="nav nav-pills nav-stacked" id="top_nav">
+                            <li><a id="button_navs" href="index.html"><i class="icon-home icon-white"></i>&nbsp;Home</a></li>
+                            <li class="active"><a id="button_navs_active" href="about.html">About Us</a></li>
+                            <li><a id="button_navs" href="for_sale.html">For Sale</a></li>
+                            <li><a id="button_navs" href="gallery.html">Gallery of Homes</a></li>
+                            <li><a id="button_navs_last" href="contact.php">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav visible-desktop" id="nav_menu">
+                        <ul class="nav nav-pills" id="top_nav">
+                            <li><a id="button_navs" href="index.html"><i class="icon-home icon-white"></i>&nbsp;Home</a></li>
+                            <li class="active"><a id="button_navs_active" href="about.html">About Us</a></li>
+                            <li><a id="button_navs" href="for_sale.html">For Sale</a></li>
+                            <li><a id="button_navs" href="gallery.html">Gallery of Homes</a></li>
+                            <li><a id="button_navs" href="contact.php">Contact Us</a></li>
                         </ul>
                     </div>
                 </div> 
             </div>
         </div>
       </div>
-     <div class="row">
-     	<div class="span12" id="spacer1em">
-        </div>
-     </div>
-	<div class="about_content">
-    	<div class="row">
-        	<div class="span10 offset2">
-                <div id="content_large_col">
-                    <h3 class="contact_header">
-                        About Us header
-                    </h3>
-                    <p id="small_col_content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis eleifend libero id semper. Duis mi nisl, vulputate sit amet fermentum eget, blandit sodales lorem. Nunc commodo rhoncus tortor ac condimentum. Vivamus vitae quam turpis. Donec lacinia lectus sit amet eros volutpat et vulputate arcu mattis. Duis et risus eget purus sollicitudin scelerisque ac eu orci. Donec adipiscing tempus erat at ullamcorper. Nulla porttitor rutrum neque, ut pretium erat vulputate id. Nam molestie convallis urna, et fermentum mauris malesuada sit amet. Ut vel diam ut nisi tincidunt auctor a at mi. Fusce pulvinar massa quis lacus tristique congue. Aenean eget libero tortor, vitae euismod est. Nulla vel arcu et enim mollis rhoncus vitae vitae odio. Proin ut magna magna, in condimentum lectus. Nulla facilisi.
-                    </p>
-                </div>
-        	</div>
-    	</div>
 	</div>
-	<div class="row">
-          	<div class="span12" id="spacer15">
-            </div>
-   	</div>
-       <div class="row">
-         <div id="footer">
-           <p id="copyright"> Copyright 2012<br />
-            Virani Custom Homes</p><br />
+    <div class="container">
+      <div class="about_content">
+          <div class="row">
+              <div class="span10 offset1">
+                  <div id="content_large_col">
+                      <h3 class="contact_header">
+                          About Us
+                      </h3>
+                      <p id="small_col_content">
+                              As a husband-and-wife team, we work together on every detail, inside and out. A home for your family, built by our family. That’s what you’ll find at Virani Custom Homes.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+		<div class="span5 offset1" id="content_small_col">
+        	<h3 class="content_header">Annell Bailey</h3>
+                <p class="content1" id="small_col_content">
+                <img class="thumbnail pull-left" id="mini_pics" src="img/annell.png" /> 
+                        Annell left the tropical breezes of the Dominican Republic to study Business at Bob Jones University in Greenville, S.C. She started her career in banking, until she met John, got married and ended up in the homebuilding business.<br /><br />
+                        If a Virani home seems different from everything else you’ve seen on the market, that’s because Annell brings a little bit of Caribbean warmth to every design project. Can’t decide on just the right color or finish? Ask Annell! She’ll be happy to share her ideas.
+               </p>
+        </div>		
+        <div class="span5" id="content_small_col">
+        	<h3 class="content_header">John Bailey</h3>
+                <p class="content1" id="small_col_content">
+                <img class="thumbnail pull-left" id="mini_pics" src="img/john.png" />
+                        John has been an entrepreneur and business owner since he was 14 years old. Honesty, dedication and hard work are the values that he lives by. You’ll find him on the jobsite all hours of the day, overseeing every detail to make sure the work is done right and you’re 100% satisfied.<br /><br />
+                        John is a Licensed General Contractor, with additional licenses in electrical, plumbing and HVAC.
+               </p>
+        </div>
+      </div>
+         <div class="row">
+           <div id="footer">
+              <p class="phone_num_b visible-phone">
+                  <b>864.346.0598</b>
+              </p>
+              <p class="phone_num_b visible-phone">
+                  <b>864.787.5296</b>
+              </p>
+             <p id="copyright"> Copyright 2012<br />
+              Virani Custom Homes</p><br />
+           </div>
          </div>
-       </div>
+   	</div>
  </div>
 </body>
 </html>

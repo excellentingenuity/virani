@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+#nav_menu {
+	margin-bottom:2em;
+	padding-left:.5em;
+	padding-top:.5em;	
+	max-height:1.5em;
+}
+#360 {
+	border-radius:5px;	
+}
+.slide_container {
+	margin-top:1em;	
+}
+#slider1{
+	margin-left:1em;
+	max-height:400px;	
+	max-width:940px;
+}
+.slide_pic{
+	max-height:400px;
+	max-width:940px;	
+}
+.for_sale_content {
+	margin-top:1em;
+}
+#portfolios {
+	margin-left:0px;	
+}
+.gallery_content {
+	margin-top:1em;
+}
+.my_contact {
+	background-color:#999999;
+	border-radius:5px;
+	padding-top:0px;
+	margin-top:1.5em;
+}
+.control-group {
+	width:98%;
+	padding-left:1em;
+}
+.phone_num {
+	/*margin-left:2.5em;*/
+	font-size:2em;
+}
+#map_container {
+	margin-top:1.5em;	
+}

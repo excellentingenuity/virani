@@ -1,7 +1,16 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-
+  <script type="text/javascript">
+  	if(!navigator.javaEnabled()){
+	}else{
+		var head = document.getElementsByTagName("head")[0];
+		var sc = document.createElement('script');
+		//sc.src = 'UnWrapperApplets.js';
+		sc.src = 'writeApplets.js';
+		head.appendChild(sc);
+	}
+  </script>
 <!-- Page designed and coded by James Johnson 2012 under contract for ERF Marketing -->
 
 
@@ -11,92 +20,129 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="bootstrap/css/bootstrap.css" rel="stylesheet" >
-
-
 <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-
-<link id="basecss" href="css/base.css" rel="stylesheet">
+<link rel="stylesheet" media="screen" href="css/phone.css">
+<link rel="stylesheet" media="screen and (min-width: 330px) and (max-width: 590px)" href="css/phone-hz.css"> 
+<link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 800px)" href="css/tablet.css">
+<link rel="stylesheet" media="screen and (min-width: 801px) and (max-width: 1280px)" href="css/desktop.css">
+<link rel="stylesheet" media="screen and (min-width: 1280px)" href="css/widescreen.css">
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<link rel="shortcut icon" href="../assets/ico/favicon.ico">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+
 <!--javascript includes -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script src="assets/js/jquery.js"></script>
   <script src="assets/js/bootstrap-transition.js"></script>
-  <script src="assets/js/bootstrap-alert.js"></script>
-  <script src="assets/js/bootstrap-modal.js"></script>
-  <script src="assets/js/bootstrap-dropdown.js"></script>
-  <script src="assets/js/bootstrap-scrollspy.js"></script>
-  <script src="assets/js/bootstrap-tab.js"></script>
-  <script src="assets/js/bootstrap-tooltip.js"></script>
-  <script src="assets/js/bootstrap-popover.js"></script>
   <script src="assets/js/bootstrap-button.js"></script>
-  <script src="assets/js/bootstrap-collapse.js"></script>
   <script src="assets/js/bootstrap-carousel.js"></script>
-  <script src="assets/js/bootstrap-typeahead.js"></script>
-  <script src="assets/js/detect.js"></script>
+
+<!-- insert google analytics code here-->
 
 </head>
 
 <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+
   <div class="container">
       <div id="header">
           <div class="row">
-              <div class="span10 offset2" id="header_logo">
-                  <a href="#" ><img class="header_logo" src="img/Virani Logo3a.jpg" alt="Virani Custom Homes" /></a>
+              <div class="span5 offset1" id="header_logo">
+                  <a href="#" ><img class="header_logo" src="img/logo.png" alt="Virani Custom Homes" /></a>
+              </div>
+              <div class="span2 offset3 visible-tablet" id="phone_top">
+              		<p class="phone_num visible-tablet">
+                    	<b>864.346.0598</b>
+                    </p>
+                    <p class="phone_num visible-tablet">
+                    	<b>864.787.5296</b>
+                    </p>
+              </div>
+              <div class="span2 offset5 visible-desktop" id="phone_top">
+              		<p class="phone_num visible-desktop">
+                    	<b>864.346.0598</b>
+                    </p>
+                    <p class="phone_num visible-desktop">
+                    	<b>864.787.5296</b>
+                    </p>
               </div>
           </div>
             <div class="nav_container">      
               <div class="row" id="nav_row">
-                <div class="span10 offset2" id="nav_span">
-                    <div class="nav" id="nav_menu">
-                        <ul class="nav nav-pills" id="top_nav">
-                            <li class="active"><a id="button_navs_active" href="#"><i class="icon-home icon-white"></i>&nbsp;Home</a></li>
+                <div class="span10 offset1" id="nav_span">
+                    <div class="nav visible-phone" id="nav_menu">
+                        <ul class="nav nav-pills nav-stacked" id="top_nav">
+                            <li class="active"><a id="button_navs_active" href="index.html"><i class="icon-home icon-white"></i>&nbsp;Home</a></li>
                             <li><a id="button_navs" href="about.html">About Us</a></li>
                             <li><a id="button_navs" href="for_sale.html">For Sale</a></li>
                             <li><a id="button_navs" href="gallery.html">Gallery of Homes</a></li>
-                            <li><a id="button_navs" href="contact.html">Contact Us</a></li>
+                            <li><a id="button_navs" href="contact.php">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav visible-tablet" id="nav_menu">
+                        <ul class="nav nav-pills nav-stacked" id="top_nav">
+                            <li class="active"><a id="button_navs_active" href="index.html"><i class="icon-home icon-white"></i>&nbsp;Home</a></li>
+                            <li><a id="button_navs" href="about.html">About Us</a></li>
+                            <li><a id="button_navs" href="for_sale.html">For Sale</a></li>
+                            <li><a id="button_navs" href="gallery.html">Gallery of Homes</a></li>
+                            <li><a id="button_navs_last" href="contact.php">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav visible-desktop" id="nav_menu">
+                        <ul class="nav nav-pills" id="top_nav">
+                            <li class="active"><a id="button_navs_active" href="index.html"><i class="icon-home icon-white"></i>&nbsp;Home</a></li>
+                            <li><a id="button_navs" href="about.html">About Us</a></li>
+                            <li><a id="button_navs" href="for_sale.html">For Sale</a></li>
+                            <li><a id="button_navs" href="gallery.html">Gallery of Homes</a></li>
+                            <li><a id="button_navs" href="contact.php">Contact Us</a></li>
                         </ul>
                     </div>
                 </div> 
             </div>
         </div>
-      </div><br /><br /><br />
+      </div>
 	  <div class="slide_container">
       	<div class="row">
-           <div class="span8 offset3">
-        	<div id="slider3" class="carousel">
-            	<div class="carousel-inner">
-                <div class="active item"><img class="slide_pic" src="img/slide1.jpg" alt="" title="" /></div>
-                <div class="item"><img class="slide_pic" src="img/slide2.jpg" alt="" title="" /></div>
-                <div class="item"><img class="slide_pic" src="img/slide3.jpg" alt="" title="" /></div>
-			</div>
-            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
- 			<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+   <script type="text/javascript">
+   if(!navigator.javaEnabled()) {
+	  
+		var markup ="<div class=\"span10 offset1\"><div id=\"slider1\" class=\"carousel\"><div class=\"carousel-inner\"><div class=\"active item\"><img class=\"slide_pic\" src=\"img/slide_1.jpg\" alt=\"\" title=\"\" /><\/div><div class=\"item\"><img class=\"slide_pic\" src=\"img/slide_2.jpg\" alt=\"\" title=\"\" /><\/div><div class=\"item\"><img class=\"slide_pic\" src=\"img/slide_3.jpg\" alt=\"\" title=\"\" /><\/div><\/div><a class=\"carousel-control left\" href=\"#slider1\" data-slide=\"prev\">&lsaquo;<\/a><a class=\"carousel-control right\" href=\"#slider1\" data-slide=\"next\">&rsaquo;<\/a><\/div>";
+		document.write(markup);
+   } else {
+	   
+	   document.write("<div class=\"span6 offset3 visible-desktop\" id=\"360_container\"><div id=\"360\">");
+	   var w = window.innerWidth;
+	   var l = window.innerHeight;
+	   if (w <= 1280){   
+	   	var cw = (w/2);
+	   }else {
+		   cw = 640;
+	   }
+	   var cl = (l/3);
+	   
+	  //addPTViewerParameter("file","1_0360.jpg");
+      //addPTViewerParameter("fov",93);
+      //addPTViewerParameter("antialias","true");
+      //addPTViewerParameter("auto",0.10);
+      //addPTViewerParameter("wait","wait.gif");
+      //InsertPTVApplet("viewer",cw,cl);  
+	  
+	  InsertApplets(cw,cl,150); 
+	  
+	  document.write("<\/div><\/div>");   
+   }
+   </script>
+            </div>
          </div>
-        </div>
        </div>
       </div>
       <script>
 	  $('.carousel').carousel({
-  		interval: 4500
+  		interval: 4600
 		})
 	</script>
+   <div class="container">
 	 <div class="main_content">            
           <div class="row">
-                <div class="span4 offset2" id="content_small_col">
+                <div class="span5 offset1" id="content_small_col">
                     <h2 class="content_header">
                         We build for the heart ...
                     </h2>
@@ -108,7 +154,7 @@
                         So go ahead! Discover how it feels to have your house built by friends.
                     </p>
                 </div>
-                <div class="span4" id="content_small_col">
+                <div class="span5" id="content_small_col">
                     <h2 class="content_header">
                         … and for the head
                     </h2>
@@ -130,22 +176,7 @@
                         Smart and beautiful. What’s not to love?
                     </p>
                 </div>
-                <div class="span3" id="right_sidebar">
-                    <h2 class="contact_header">
-                        Contact Us
-                    </h2>
-                    
-                    <a id="fb" href="https://www.facebook.com/viranicustom" alt="find us on facebook"><img id="fb_button" src="img/facebook_button.png" alt="find us on facebook" /></a>&nbsp;<div class="fb-like" data-href="https://www.facebook.com/viranicustom" data-send="true" data-layout="button_count" data-width="100" data-show-faces="true"></div>
-                    <br />
-                    <p class="contact_content">
-                        526 Tomotley Ct.<br />
-                        Greer, SC 29651<br />
-                        Phone: 864.346.0598 <br />
-                        <a class="btn btn-primary btn-info btn-large" id="email_btn" href="mailto:viranicustom@gmail.com" alt="Email Us"><i class="icon-envelope icon-white"></i>&nbsp;Email</a>
-    
-                    </p>
-                </div>
-          </div>
+           </div>
           <div class="row">
           	<div class="span12" id="spacer15">
             </div>
@@ -153,11 +184,17 @@
         
           <div class="row">
             <div id="footer">
-              <p id="copyright"> Copyright 2012<br />
-              Virani Custom Homes</p><br />
+              <p class="phone_num_b visible-phone">
+                  <b>864.346.0598</b>
+              </p>
+              <p class="phone_num_b visible-phone">
+                  <b>864.787.5296</b>
+              </p>
+              <p id="copyright"><b> Copyright 2012<br />
+              Virani Custom Homes</b></p><br />
             </div>
           </div>
-        
+        </div>
 	 </div>
   </div>
 </body>

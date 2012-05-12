@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+.nav_container {
+	padding:2px;
+	background-color:#0D163F;
+	width:100%;
+	
+}
+#nav_row {
+	padding:0px;
+	
+}
+#nav_span {
+	
+}
+.slide_container {
+	padding-top:150px;
+}
+.about_content {
+	padding-top:53%;	
+	min-height:300px;
+}
+body {
+	background-image:url(../img/back2.jpg);
+	background-position:center;
+	background-size:cover;
+
+	
+}
+.container {
+	width:100%;
+	height:100%;
+	padding:0px;
+}
+.main_content {
+	height:100%;
+}
+#header{ 
+	background-color:#999999;
+	height:150px;
+	width:100%;
+
+}
+.header_logo {
+	height:150px;
+	width:100%;
+
+}
+#button_navs_active {
+	background-color:#999999;
+	color:#FFFFFF;
+}
+#button_navs {
+	color:#FFFFFF;
+	background-color:#BB9A2F;
+}
+#button_navs:hover {
+	background-color:#999999;
+	color:#0D163F;
+}
+
+#footer {
+	
+	color:#0D163F;
+	padding-top:8px;
+
+	
+}
+#copyright {
+	text-align:center;
+}
+
+#content_small_col {
+	background-color:#FFFFFF;
+	border-radius:5px;
+		
+}
+.content_header {
+	background-color:#0D163F;
+	color:#BB9A2F;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	padding:5px;
+	text-align:center;
+	
+}
+#small_col_content {
+	padding:5px;
+	height:100%;
+	font-size:1em;
+}
+.content_ul {
+	list-style-type:round;
+}
+#right_sidebar {
+	background-color:#999999;
+	border-radius:5px;
+	
+}
+.contact_header {
+	background-color:#0D163F;
+	color:#BB9A2F;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	padding:5px;
+	text-align:center;
+}
+.contact_content {
+	padding:5px;
+	height:100%;
+	color:#FFFFFF;
+	text-align:center;
+	font-size:1em;
+}
+#spacer1em {
+	height:1em;
+}
+#spacer2em {
+	height:2em;
+}
+#spacer15 {
+	height:15px;
+}
+#spacer10 {
+	height:10px;
+}
+#spacer5 {
+	height:5px;	
+}
+#slider3 {
+	padding-top:3px;
+	padding-bottom:3px;
+	
+}
+.slide_pic {
+	border-color:#FFFFFF;
+	border-radius:5px;	
+	height:60%;
+	width:100%;
+	max-height:400px;
+}
+.slides {
+	border-radius:5px;
+}
+#email_btn {
+	color:#FFFFFF;
+	background-image:none;
+	background-color:#BB9A2F !important;
+	padding-top:5px;
+}
+a#fb {
+	background:none;
+	padding-left:25%;
+	paddin-top:5px;	
+}
+#fb_button {
+	height:40px;
+	width:40px;
+	background:none;
+	border:none;
+
+}
+.fb-like {
+	padding-left:10px;
+	padding-top:10px;
+}
+#content_large_col {
+	background-color:#FFFFFF;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}

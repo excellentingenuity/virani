@@ -1,0 +1,143 @@
+/* CSS Document */
+
+body {
+	background-image:url(../img/back2.jpg);
+	background-position:center;
+	background-size:auto;
+}
+#header_logo{
+	max-height:150px;
+	max-width:275px;
+}
+#phone_top {
+	margin-top:1.5em;	
+}
+.phone_num {
+	color:#BB9A2F;
+	font-size:1.3em;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#nav_span {
+	background-color:#0D163F;
+	border-radius:5px;	
+	
+}
+
+#button_navs_active {
+	background-color:#999999;
+	color:#FFFFFF;
+	text-align:center;
+}
+#button_navs {
+	text-align:center;
+	color:#FFFFFF;
+	background-color:#BB9A2F;
+}
+#button_navs:hover {
+	background-color:#999999;
+	color:#0D163F;
+}
+#slider1{
+	max-height:150px;
+	max-width:275px;
+	
+}
+.slide_pic{
+	max-height:150px;
+	max-width:275px;
+	border-radius:5px;	
+}
+#content_small_col {
+	background-color:#FFFFFF;
+	border-radius:5px;
+	
+		
+}
+.content_header {
+	background-color:#0D163F;
+	color:#BB9A2F;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	padding:5px;
+	text-align:center;
+	
+}
+#small_col_content {
+	padding:5px;
+	height:100%;
+	font-size:1em;
+}
+.content_ul {
+	list-style-type:round;
+}
+#footer {
+	
+	color:#0D163F;	
+	padding-top:8px;
+	vertical-align:bottom;
+}
+#copyright {
+	text-align:center;
+	
+}
+.phone_num_b {
+	text-align:center;
+	
+	font-size:1.3em;
+	font-family:Arial, Helvetica, sans-serif;
+}
+/*about us page */
+.about_content {
+	margin-top:2em;	
+}
+#small_col_content {
+	padding:5px;
+	height:100%;
+	font-size:1em;
+}#content_large_col {
+	background-color:#FFFFFF;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+
+#portfolios {
+	margin-left:25%;	
+}
+a.thumbnail {
+	color:#0D163F;
+}
+a.thumbnail:hover {
+	color:#0D163F;
+}
+#mini_pics {
+	margin-right:1em;
+}
+/*contact us page */
+
+.my_contact {
+	background-color:#999999;
+	border-radius:5px;
+	padding-top:0px;
+}
+#contact_form_para {
+	background-color:#0D163F;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	text-align:center;
+	color:#BB9A2F;
+}
+#confirmation_close {
+	background-image:none;
+	color:#FFFFFF;
+	background-color:#BB9A2F;
+}
+#form_submit {
+	background-image:none;
+	color:#FFFFFF;
+	background-color:#BB9A2F;
+}
+.form-actions {
+	background-image:none;
+	background-color:#999999;
+}

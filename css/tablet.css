@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header {
+	margin-left:0px;
+}
+
+img.header_logo {
+	margin-left:0px;	
+}
+#nav_span {
+	margin-bottom:1em;
+	padding-bottom:0px;
+}
+#button_navs_last {
+	
+	margin-bottom:1px;
+	text-align:center;
+	color:#FFFFFF;
+	background-color:#BB9A2F;	
+}
+#button_navs_last_active {
+	
+	margin-bottom:1px;
+	background-color:#999999;
+	color:#FFFFFF;
+	text-align:center;	
+}
+#slider1{
+	max-height:300px;	
+	max-width:600px;
+}
+.slide_pic{
+	max-height:300px;
+	max-width:600px;	
+}
+
+#portfolios {
+	margin-left:0px;	
+}
+.my_contact {
+	background-color:#999999;
+	border-radius:5px;
+	padding-top:0px;
+}
+.control-group {
+	width:98%;
+	padding-left:.3em;
+}

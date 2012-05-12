@@ -6,81 +6,227 @@
 
 
 <meta charset="utf-8">
-<title>Gallery of Homes</title>
+<title>Gallery of Homes - Virani Custom Homes</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="bootstrap/css/bootstrap.css" rel="stylesheet" >
-
-
 <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-
-<link id="basecss" href="css/base.css" rel="stylesheet">
-<link href="css/gallery.css" rel="stylesheet">
-
+<link rel="stylesheet" media="screen" href="css/phone.css">
+<link rel="stylesheet" media="screen and (min-width: 330px) and (max-width: 590px)" href="css/phone-hz.css"> 
+<link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 800px)" href="css/tablet.css">
+<link rel="stylesheet" media="screen and (min-width: 801px) and (max-width: 1280px)" href="css/desktop.css">
+<link rel="stylesheet" media="screen and (min-width: 1280px)" href="css/widescreen.css">
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<link rel="shortcut icon" href="../assets/ico/favicon.ico">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+
 <!--javascript includes -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script src="assets/js/jquery.js"></script>
   <script src="assets/js/bootstrap-transition.js"></script>
-  <script src="assets/js/bootstrap-alert.js"></script>
-  <script src="assets/js/bootstrap-modal.js"></script>
-  <script src="assets/js/bootstrap-dropdown.js"></script>
-  <script src="assets/js/bootstrap-scrollspy.js"></script>
-  <script src="assets/js/bootstrap-tab.js"></script>
-  <script src="assets/js/bootstrap-tooltip.js"></script>
-  <script src="assets/js/bootstrap-popover.js"></script>
   <script src="assets/js/bootstrap-button.js"></script>
-  <script src="assets/js/bootstrap-collapse.js"></script>
-  <script src="assets/js/bootstrap-carousel.js"></script>
-  <script src="assets/js/bootstrap-typeahead.js"></script>
-  <script src="assets/js/detect.js"></script>
+
+<!-- insert google analytics code here-->
 
 </head>
 
 <body>
-  <div class="container">
+    <div class="container">
       <div id="header">
           <div class="row">
-              <div class="span10 offset2" id="header_logo">
-                  <a href="#" ><img class="header_logo" src="img/Virani Logo2.jpg" alt="Virani Custom Homes" /></a>
+              <div class="span5 offset1" id="header_logo">
+                  <a href="#" ><img class="header_logo" src="img/logo.png" alt="Virani Custom Homes" /></a>
+              </div>              
+              <div class="span2 offset3 visible-tablet" id="phone_top">
+              		<p class="phone_num visible-tablet">
+                    	<b>864.346.0598</b>
+                    </p>
+                    <p class="phone_num visible-tablet">
+                    	<b>864.787.5296</b>
+                    </p>
+              </div>
+              <div class="span2 offset5 visible-desktop" id="phone_top">
+              		<p class="phone_num visible-desktop">
+                    	<b>864.346.0598</b>
+                    </p>
+                    <p class="phone_num visible-desktop">
+                    	<b>864.787.5296</b>
+                    </p>
               </div>
           </div>
             <div class="nav_container">      
               <div class="row" id="nav_row">
-                <div class="span10 offset2" id="nav_span">
-                    <div class="nav" id="nav_menu">
+                <div class="span10 offset1" id="nav_span">
+                    <div class="nav visible-phone" id="nav_menu">
+                        <ul class="nav nav-pills nav-stacked" id="top_nav">
+                            <li><a id="button_navs" href="index.html"><i class="icon-home icon-white"></i>&nbsp;Home</a></li>
+                            <li><a id="button_navs" href="about.html">About Us</a></li>
+                            <li><a id="button_navs" href="for_sale.html">For Sale</a></li>
+                            <li class="active"><a id="button_navs_active" href="gallery.html">Gallery of Homes</a></li>
+                            <li><a id="button_navs" href="contact.php">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav visible-tablet" id="nav_menu">
+                        <ul class="nav nav-pills nav-stacked" id="top_nav">
+                            <li><a id="button_navs" href="index.html"><i class="icon-home icon-white"></i>&nbsp;Home</a></li>
+                            <li><a id="button_navs" href="about.html">About Us</a></li>
+                            <li><a id="button_navs" href="for_sale.html">For Sale</a></li>
+                            <li class="active"><a id="button_navs_active" href="gallery.html">Gallery of Homes</a></li>
+                            <li><a id="button_navs_last" href="contact.php">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav visible-desktop" id="nav_menu">
                         <ul class="nav nav-pills" id="top_nav">
                             <li><a id="button_navs" href="index.html"><i class="icon-home icon-white"></i>&nbsp;Home</a></li>
                             <li><a id="button_navs" href="about.html">About Us</a></li>
                             <li><a id="button_navs" href="for_sale.html">For Sale</a></li>
-                            <li class="active"><a id="button_navs_active" href="#">Gallery of Homes</a></li>
-                            <li><a id="button_navs" href="contact.html">Contact Us</a></li>
+                            <li class="active"><a id="button_navs_active" href="gallery.html">Gallery of Homes</a></li>
+                            <li><a id="button_navs" href="contact.php">Contact Us</a></li>
                         </ul>
                     </div>
                 </div> 
             </div>
         </div>
       </div>
-	<div class="gallery_content">
-    	
 	</div>
-	<div class="row">
-          	<div class="span12" id="spacer15">
-            </div>
-          </div>
-          <div class="row">
-              <div id="footer">
-                <p id="copyright"> Copyright 2012<br />
-                Virani Custom Homes</p><br />
+    <div class="container">
+      <div class="gallery_content">
+    <div class="row visible-phone" id="portfolios">
+    	<ul class="thumbnails" id="phone_portfolio">
+    		<li class="span4">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/140x100" alt="">
+   				 </a>
+ 			</li>
+            <li class="span4">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/140x100" alt="">
+   				 </a>
+ 			</li>
+            <li class="span4">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/140x100" alt="">
+   				 </a>
+ 			</li>
+            <li class="span4">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/140x100" alt="">
+   				 </a>
+ 			</li>
+    	</ul>
+    </div>
+    <div class="row visible-tablet" id="portfolios">
+    	<ul class="thumbnails">
+    		<li class="span3">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/260x180" alt="">
+   				 </a>
+ 			</li>
+            <li class="span3 tablet_thumb">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/260x180" alt="">
+   				 </a>
+ 			</li>
+            <li class="span3 tablet_thumb">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/260x180" alt="">
+   				 </a>
+ 			</li>
+            <li class="span3 tablet_thumb">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/260x180" alt="">
+   				 </a>
+ 			</li>
+    	</ul>    	
+        <ul class="thumbnails">
+    		<li class="span3">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/260x180" alt="">
+   				 </a>
+ 			</li>
+            <li class="span3 tablet_thumb">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/260x180" alt="">
+   				 </a>
+ 			</li>
+            <li class="span3 tablet_thumb">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/260x180" alt="">
+   				 </a>
+ 			</li>
+            <li class="span3 tablet_thumb">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/260x180" alt="">
+   				 </a>
+ 			</li>
+    	</ul>
+    </div>
+    <div class="row visible-desktop" id="portfolios">
+    	<ul class="thumbnails">
+    		<li class="span3">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/260x180" alt="">
+   				 </a>
+ 			</li>
+            <li class="span3">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/260x180" alt="">
+   				 </a>
+ 			</li>
+            <li class="span3">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/260x180" alt="">
+   				 </a>
+ 			</li>
+            <li class="span3">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/260x180" alt="">
+   				 </a>
+ 			</li>
+    	</ul>
+    </div>
+    <div class="row visible-desktop" id="portfolios">
+    	<ul class="thumbnails">
+    		<li class="span3">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/260x180" alt="">
+   				 </a>
+ 			</li>
+            <li class="span3">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/260x180" alt="">
+   				 </a>
+ 			</li>
+            <li class="span3">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/260x180" alt="">
+   				 </a>
+ 			</li>
+            <li class="span3">
+    			<a href="#" class="thumbnail">
+      				<img src="http://placehold.it/260x180" alt="">
+   				 </a>
+ 			</li>
+    	</ul>
+    </div>
+      </div>
+      <div class="row">
+              <div class="span12" id="spacer15">
               </div>
-      	</div>
+      </div>
+         <div class="row">
+           <div id="footer">              
+              <p class="phone_num_b visible-phone">
+                  <b>864.346.0598</b>
+              </p>
+              <p class="phone_num_b visible-phone">
+                  <b>864.787.5296</b>
+              </p>
+             <p id="copyright"> Copyright 2012<br />
+              Virani Custom Homes</p><br />
+           </div>
+         </div>
+   	</div>
  </div>
 </body>
 </html>

@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+img.header_logo {
+	margin-left:30%;
+}
+#slider1{
+	margin-left:15%;
+	max-height:250px;
+	max-width:375px;
+	
+}
+.slide_pic{
+	max-height:250px;
+	max-width:375px;
+}
+#portfolios {
+	margin-left:20%;	
+}
+.control-group {
+	margin-left:25%;
+}
+#mobile_map {
+	width:520px;
+	height:300px;
+}
